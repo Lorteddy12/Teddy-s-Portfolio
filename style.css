@@ -1,0 +1,27 @@
+body {
+margin: 0;
+padding: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.nav img {
+    height: 90px;
+    color: white; 
+    /* does nothing(color) */
+}
+video::-webkit-media-controls-panel {
+    display: none; 
+    opacity: 0;
+}
+.aboutme {
+
+}
+article img {
+    height:1000px ;
+    width:px ;
+}
