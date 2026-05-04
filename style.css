@@ -1,3 +1,6 @@
+* {
+}
+
 body {
 margin: 0;
 padding: 0;
@@ -8,6 +11,7 @@ padding: 0;
     align-items: center;
     background-color: black;
     color: white;
+
 }
 .nav img {
     height: 90px;
@@ -19,9 +23,49 @@ video::-webkit-media-controls-panel {
     opacity: 0;
 }
 .aboutme {
+display: grid;
+grid-template-columns:auto auto auto;
 
 }
 article img {
     height:1000px ;
     width:px ;
+}
+.projects {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.me {
+    width: 300px;
+    height: fit-content;
+    padding-top: px;
+}
+.meText {
+    background: black;
+    color: white;
+    height: 450px;  
+    width: 300px;
+    margin-top: 0px;
+;
+    
+}
+.textMe {
+    background-color: grey;
+    width: 300px;
+}
+.head1 {
+display: flex;
+justify-content: space-around
+}
+.proj {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+
+    background-color: red;
 }
