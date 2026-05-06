@@ -8,9 +8,11 @@ body {
     align-items: center;
     background-color: black;
     color: white;
+    margin: 0%;
+    padding: 0%;
 }
 .nav img {
-    height: 90px;
+    height: 130px;
     color: white; 
     /* does nothing(color) */
 }
@@ -18,14 +20,16 @@ video::-webkit-media-controls-panel {
     display: none; 
     opacity: 0;
 }
-.me {
-    width: 5600px;
-    height: fit-content;
+.myface {
+    height: 390px;
 }
 
 .textMe {
     background-color: grey;
-    width: 300px;
+    width: fit-content;
+    height: 350px;
+    margin: 0%;
+    padding: 0%;
 
 }
 .head1 {
@@ -39,11 +43,7 @@ justify-content: space-around
     padding-left: 10px;
   }
   
-  .proj {
-    background-color: black;
-    height: 500px;
-    border-radius: 8px;
-  }
+
 .all {
     display: flex;
     gap: 20px; 
@@ -59,6 +59,7 @@ justify-content: space-around
 }
 .skills-section {
     flex: 1; /* exspands the box */
+    height: 400px;
 }
 h2 {
     text-align: center;
@@ -66,7 +67,7 @@ h2 {
 }
 .content-box {
     background-color: #e0e0e0; 
-    min-height: 300px;
+    height: fit-content;
     display: flex;
 }
 .about-content {
@@ -82,6 +83,46 @@ h2 {
     padding: 20px;
     line-height: 1.5;
 }
-.img.me {
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 87px;
+}
+.proj {
+    display: flex;
+    align-content: center;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+    background-color: black;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.pro {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+}
+.proTitle {
+    padding-left: 10px;
+}
 
+.overlay {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 70%;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
