@@ -33,6 +33,25 @@ projects.forEach((proj, index) => {
 function goBack() {
     window.history.back();
 }
+function normalListener() {
+    let typedText = "";
+    
+    document.addEventListener("keydown", (event) => {
+        //  Ignore keys(Shift, Alt, etc)
+        if (event.key.length > 1) return;
+        typedText += event.key.toLowerCase();
+        if (typedText.length > 20) {
+            typedText = typedText.slice(-7); // We only need the last 7 chars for "barcode"
+        }
+        if (typedText.includes("normal")) {
+            console.log("Magic word detected!");
+            // Use a class for better reliability
+            document.body.style.fontFamily = "'Consolas', cursive";
+            typedText = ""; 
+        }
+    });
+}
+
 function initBarcodeListener() {
     let typedText = "";
     
@@ -43,13 +62,13 @@ function initBarcodeListener() {
         if (typedText.length > 20) {
             typedText = typedText.slice(-7); // We only need the last 7 chars for "barcode"
         }
-        if (typedText.includes("comicsans")) {
+        if (typedText.includes("barcode")) {
             console.log("Magic word detected!");
             // Use a class for better reliability
-            document.body.style.fontFamily = "'sans comic sans', cursive";
+            document.body.style.fontFamily = "'Libre Barcode 39', cursive";
             typedText = ""; 
         }
     });
 }
-
 initBarcodeListener();
+normalListener();

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
-@import url('https://fonts.cdnfonts.com/css/sans-comic-sans');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body {
     margin: 0%;
     padding: 0%;
@@ -52,7 +52,9 @@ justify-content: space-around
     padding-left: 10px;
   }
   
-
+.cards {
+    border-radius: 15px;
+}
 .all {
     display: flex;
     gap: 20px; 
@@ -168,7 +170,7 @@ footer {
     height: auto;
     padding-left: 15px;
     transition: transform 0.3s ease;
-    
+    cursor: pointer;
 }
 .BackBtn :hover {
     transform: scale(1.1);
@@ -308,8 +310,15 @@ footer {
 }
 .printBtn{
     display: flex;
-    align-self: end;
+    align-content: end;
     justify-content: end;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 @media print {
     /* Hide everything */
