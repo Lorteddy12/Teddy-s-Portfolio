@@ -167,7 +167,11 @@ footer {
     width: 10px;
     height: auto;
     padding-left: 15px;
+    transition: transform 0.3s ease;
     
+}
+.BackBtn :hover {
+    transform: scale(1.1);
 }
 
 .projText {
@@ -302,3 +306,27 @@ footer {
     margin-bottom:7px;
     line-height:1.5;
 }
+.printBtn{
+    display: flex;
+    align-self: end;
+    justify-content: end;
+}
+@media print {
+    /* Hide everything */
+    body * {
+      visibility: hidden;
+    }
+    /* Show only the specific section and its contents */
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+    }
+    /* Position the section at the top of the printed page */
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  
+
+  
