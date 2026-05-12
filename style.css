@@ -8,7 +8,7 @@ body {
 }
 html {
     scroll-behavior: smooth; /* Applies smooth scrolling document-wide */
-  }
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -50,8 +50,7 @@ justify-content: space-around
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     padding-left: 10px;
-  }
-  
+}
 .cards {
     border-radius: 15px;
 }
@@ -149,7 +148,7 @@ font-size: xx-large;
 a {
     color: rgb(255, 255, 255); /* Set to your desired color */
     text-decoration: none; /* Optional: also removes the underline */
-  }
+}
 .AboutMe {
     color: white;
     font-family: "Supermercado One", cursive;
@@ -320,22 +319,65 @@ footer {
     align-items: center;
     text-align: center;
 }
+.timeLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    width: 100;
+}
+
+.timeTitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Supermercado One", cursive;
+    margin: 0%;
+    font-size: xx-large;
+}
+#timeline-content1 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
+#timeline-content2 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
+#timeline-content3 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
+#timeline-content4 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
+#timeline-content5 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
+#timeline-content6 {
+    opacity: 0%;
+    transition: color 0.3s ease-in-out;
+}
 @media print {
     /* Hide everything */
     body * {
-      visibility: hidden;
+    visibility: hidden;
     }
     /* Show only the specific section and its contents */
     #section-to-print, #section-to-print * {
-      visibility: visible;
+    visibility: visible;
     }
     /* Position the section at the top of the printed page */
     #section-to-print {
-      position: absolute;
-      left: 0;
-      top: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
     }
-  }
-  
+}
 
-  
+

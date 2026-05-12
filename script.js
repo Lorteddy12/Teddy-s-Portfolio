@@ -70,5 +70,19 @@ function initBarcodeListener() {
         }
     });
 }
+
+function TimelineListener() {
+    const hov1 = document.getElementById("hov1");
+    const timeline1 = document.getElementById("timeline-content1");
+    hov1.addEventListener('mouseenter', () => {
+        timeline1.style.opacity = '0';
+    });
+    // hover out
+    hov1.addEventListener('mouseleave', () => {
+        timeline1.style.opacity = '0.7';
+    });
+}
+TimelineListener();
+
 initBarcodeListener();
 normalListener();
