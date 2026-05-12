@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
 
 body {
-    margin: 0%;
-    padding: 0%;
     background-color: black;
 }
 html {
@@ -186,8 +184,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    padding-left:10px ;
+    padding-right:10px ;
 }
 /* resume stuff */
 .page{
@@ -379,7 +377,7 @@ footer {
 }
 @media print {
     /* Hide everything */
-    body * {
+    * {
     visibility: hidden;
     }
     /* Show only the specific section and its contents */
