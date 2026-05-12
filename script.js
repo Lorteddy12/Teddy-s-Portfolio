@@ -46,7 +46,7 @@ function normalListener() {
         if (typedText.includes("normal")) {
             console.log("Magic word detected!");
             // Use a class for better reliability
-            document.body.style.fontFamily = "'Consolas', cursive";
+            document.body.style.fontFamily = "'Times New Roman', cursive";
             typedText = ""; 
         }
     });
@@ -71,15 +71,66 @@ function initBarcodeListener() {
     });
 }
 
+
 function TimelineListener() {
     const hov1 = document.getElementById("hov1");
     const timeline1 = document.getElementById("timeline-content1");
     hov1.addEventListener('mouseenter', () => {
-        timeline1.style.opacity = '0';
+        timeline1.style.opacity = '1';
     });
     // hover out
     hov1.addEventListener('mouseleave', () => {
-        timeline1.style.opacity = '0.7';
+        timeline1.style.opacity = '0';
+    });
+    // take2
+        const hov2 = document.getElementById("hov2");
+    const timeline2 = document.getElementById("timeline-content2");
+    hov2.addEventListener('mouseenter', () => {
+        timeline2.style.opacity = '1';
+    });
+    // hover out
+    hov2.addEventListener('mouseleave', () => {
+        timeline2.style.opacity = '0';
+    });
+    // take3
+    const hov3 = document.getElementById("hov3");
+    const timeline3 = document.getElementById("timeline-content3");
+    hov3.addEventListener('mouseenter', () => {
+        timeline3.style.opacity = '1';
+    });
+    // hover out
+    hov3.addEventListener('mouseleave', () => {
+        timeline3.style.opacity = '0';
+    });
+    // take4
+    const hov4 = document.getElementById("hov4");
+    const timeline4 = document.getElementById("timeline-content4");
+    hov4.addEventListener('mouseenter', () => {
+        timeline4.style.opacity = '1';
+    });
+    // hover out
+    hov4.addEventListener('mouseleave', () => {
+        timeline4.style.opacity = '0';
+    });
+     // take5
+    const hov5 = document.getElementById("hov5");
+    const timeline5 = document.getElementById("timeline-content5");
+    hov5.addEventListener('mouseenter', () => {
+        timeline5.style.opacity = '1';
+    });
+    // hover out
+    hov5.addEventListener('mouseleave', () => {
+        timeline5.style.opacity = '0';
+    });
+        // take6
+        const hov6 = document.getElementById("hov6");
+    const timeline6 = document.getElementById("timeline-content6");
+    hov6.addEventListener('mouseenter', () => {
+        timeline6.style.opacity = '1';
+    });
+    // hover out
+    hov6.addEventListener('mouseleave', () => {
+        timeline6.style.opacity = '0';
     });
 }
 TimelineListener();

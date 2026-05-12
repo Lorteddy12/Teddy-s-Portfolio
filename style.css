@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
     margin: 0%;
     padding: 0%;
     background-color: black;
+    font-family: ;
 }
 html {
     scroll-behavior: smooth; /* Applies smooth scrolling document-wide */
@@ -30,15 +31,15 @@ video::-webkit-media-controls-panel {
     opacity: 0;
 }
 .myface {
-    height: 390px;
+    height: 500px;
 }
 
 .textMe {
     background-color: rgb(255, 255, 255);
     width: fit-content;
-    height: 350px;
-    margin: 0%;
-    padding: 0%;
+    height: 425px;
+    margin-top: 0%;
+    padding-top: 0%;
 
 }
 .head1 {
@@ -50,6 +51,7 @@ justify-content: space-around
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     padding-left: 10px;
+    cursor: pointer;
 }
 .cards {
     border-radius: 15px;
@@ -69,7 +71,7 @@ justify-content: space-around
 }
 .skills-section {
     flex: 1; /* exspands the box */
-    height: 400px;
+    height: 600px;
 }
 h2 {
     text-align: center;
@@ -84,7 +86,7 @@ h2 {
     display: flex;
     align-items: flex-start; 
     font-family: "Supermercado One", cursive;
-font-size: xx-large;
+    font-size: xx-large;
 }
 .me {
     width: 150px; 
@@ -100,9 +102,10 @@ font-size: xx-large;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 45px;
+    padding-bottom: 0px;;
     font-family: "Supermercado One", cursive;
-    font-size: large;
+    font-size: x-large;
+    height: 500px;
 }
 .proj {
     display: flex;
@@ -152,6 +155,7 @@ a {
 .AboutMe {
     color: white;
     font-family: "Supermercado One", cursive;
+
 }
 .Skills {
 color: white;
@@ -177,7 +181,7 @@ footer {
 
 .projText {
     color: white;
-    font-size: large;
+    font-size: xx-large;
     font-family: "Supermercado One" cursive;
     display: flex;
     flex-direction: column;
@@ -328,38 +332,49 @@ footer {
     padding: 20px;
     color: white;
     cursor: pointer;
-    width: 100;
+
+    font-family: supermercado one, cursive;
 }
 
 .timeTitle {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     font-family: "Supermercado One", cursive;
     margin: 0%;
+    padding: 0%;
     font-size: xx-large;
+    font-family: "Supermercado One", cursive;
 }
 #timeline-content1 {
+    width:10%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
 }
 #timeline-content2 {
+    width:20%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
 }
 #timeline-content3 {
+    width:25%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
+
 }
 #timeline-content4 {
+    width:20%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
 }
 #timeline-content5 {
+    width:20%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
 }
 #timeline-content6 {
+    width:20%;
     opacity: 0%;
     transition: color 0.3s ease-in-out;
 }
