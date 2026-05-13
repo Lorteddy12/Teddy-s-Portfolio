@@ -146,8 +146,8 @@ h2 {
     align-items: center;
 }
 a {
-    color: rgb(255, 255, 255); /* Set to your desired color */
-    text-decoration: none; /* Optional: also removes the underline */
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
 }
 .AboutMe {
     color: white;
@@ -189,7 +189,7 @@ footer {
 }
 /* resume stuff */
 .page{
-    background:#191818;
+    background:black;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -199,16 +199,16 @@ footer {
 
 .resume{
     width:850px;
-    background:#ececec;
+    background:white;
     display:flex;
-    box-shadow:0 0 20px rgba(0,0,0,0.2);
+
 }
 
 /* LEFT SIDE */
 .left{
     width:35%;
     background:#111;
-    color:#fff;
+    color:white;
 }
 
 .left .img-box img{
@@ -229,7 +229,7 @@ footer {
     font-size:24px;
     letter-spacing:3px;
     margin-bottom:12px;
-    color:#d8d8d8;
+    color:white;
 }
 
 .section ul{
@@ -264,7 +264,7 @@ footer {
     margin-top:10px;
     font-size:18px;
     letter-spacing:3px;
-    color:#444;
+    color:black;
 }
 
 .summary{
@@ -276,14 +276,14 @@ footer {
 
 .line{
     height:4px;
-    background:#111;
+    background:black;
     margin:25px 0;
 }
 
 .title{
     font-size:28px;
     letter-spacing:3px;
-    color:#444;
+    color: black;
     margin-bottom:15px;
     font-weight:300;
 }
